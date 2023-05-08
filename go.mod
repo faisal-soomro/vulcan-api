@@ -19,7 +19,7 @@ require (
 	github.com/google/go-cmp v0.5.9
 	github.com/gorilla/mux v1.8.0
 	github.com/jinzhu/gorm v1.9.12
-	github.com/lestrrat-go/backoff v1.0.0
+	github.com/lestrrat-go/backoff v1.0.1
 	github.com/lib/pq v1.10.3
 	github.com/robfig/cron v1.2.0
 	github.com/russellhaering/gosaml2 v0.9.1
@@ -36,7 +36,6 @@ require (
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/armon/go-metrics v0.4.0 // indirect
 	github.com/beevik/etree v1.1.0 // indirect
-	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/dimfeld/httppath v0.0.0-20170720192232-ee938bf73598 // indirect
 	github.com/dimfeld/httptreemux v5.0.1+incompatible // indirect
 	github.com/docker/distribution v2.8.1+incompatible // indirect

@@ -2,7 +2,7 @@ module github.com/adevinta/vulcan-api
 
 go 1.19
 
-replace github.com/adevinta/vulcan-types => ../vulcan-types
+replace github.com/adevinta/vulcan-types => github.com/faisal-soomro/vulcan-types v1.0.2-alpha
 
 require (
 	github.com/adevinta/errors v1.0.0

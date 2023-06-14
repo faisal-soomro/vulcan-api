@@ -73,9 +73,9 @@ func (s vulcanitoService) CreateAssets(ctx context.Context, assets []api.Asset, 
 
 		// Asset type provided by the user in the request.
 		if asset.AssetType != nil && asset.AssetType.Name != "" {
-			if !api.ValidAssetType(asset.AssetType.Name) {
-				return nil, errors.Validation("Asset type not found", "asset", asset.Identifier, asset.AssetType.Name)
-			}
+			//if !api.ValidAssetType(asset.AssetType.Name) {
+			//	return nil, errors.Validation("Asset type not found", "asset", asset.Identifier, asset.AssetType.Name)
+			//}
 
 			// Retrieve asset type from its name.
 			assetTypeObj, err := s.GetAssetType(ctx, asset.AssetType.Name)
@@ -180,11 +180,11 @@ func (s vulcanitoService) CreateAssetsMultiStatus(ctx context.Context, assets []
 		// If user specified the asset type.
 		if asset.AssetType != nil && asset.AssetType.Name != "" {
 			// If the asset type is invalid, abort the asset creation.
-			if !api.ValidAssetType(asset.AssetType.Name) {
-				response.Status = errors.Validation("Asset type not found", "asset", asset.Identifier, asset.AssetType.Name)
-				responses = append(responses, response)
-				continue
-			}
+			//if !api.ValidAssetType(asset.AssetType.Name) {
+			//	response.Status = errors.Validation("Asset type not found", "asset", asset.Identifier, asset.AssetType.Name)
+			//	responses = append(responses, response)
+			//	continue
+			//}
 
 			// Retrieve asset type from its name.
 			assetTypeObj, err := s.GetAssetType(ctx, asset.AssetType.Name)

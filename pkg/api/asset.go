@@ -106,7 +106,8 @@ func (a Asset) Validate() error {
 		}
 	default:
 		// If none of the previous case match, force a validation error
-		return errors.Validation("Asset type not supported")
+		//return errors.Validation("Asset type not supported")
+		return nil
 	}
 
 	return nil
